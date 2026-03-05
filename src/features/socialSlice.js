@@ -1,10 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
 const initialState =({
-  social : [{ facebook: "https://facebook.com"},
-    {twitter: "https://twitter.com"},
-    {instagram: "https://instagram.com"},
-    {linkedin: "https://linkedin.com"},
-   ]
+  social : { facebook: "https://www.facebook.com",
+    twitter: "https://www.twitter.com",
+    instagram: "https://www.instagram.com",
+    linkedin: "https://www.linkedin.com"
+  }
 })
 
 const socialSlice = createSlice({
