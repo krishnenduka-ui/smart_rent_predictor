@@ -11,10 +11,9 @@ const Navbar = () => {
                 <Link to={'/'} className="hover:text-blue-200">Home</Link>
                 <Link to={'/rentals'} className="hover:text-blue-200">Rentals</Link>
                 <Link to={'/compare'} className="hover:text-blue-200">Compare</Link>
-                <Link to={'/favorites'} className="hover:text-blue-200">Favorites</Link>
-                <Link to={'/saved-searches'} className="hover:text-blue-200">Saved Searches</Link>
                 <Link to={'/neighborhoods'} className="hover:text-blue-200">Neighborhoods</Link>
-                <Link to={'/profile'} className="hover:text-blue-200">Profile</Link>
+                <Link to={'/login'} className="hover:text-blue-200">Login</Link>
+                 <Link to={'/signup'} className="hover:text-blue-200">SignUp</Link>
             </div>
         </div>
 
