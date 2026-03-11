@@ -76,8 +76,10 @@ const Rentals = () => {
     console.log(e.target.value)
   })
 
- const handleClick = ()=>{
-  navigate("/map")
+
+ const handleViewMap = (id)=>{
+
+  navigate(`/map/${id}`)
  }
 
 
@@ -132,7 +134,7 @@ const Rentals = () => {
               <option value={3}>3+ Bedrooms</option>
             </select>
 
-            <button className="bg-blue-600 text-white rounded hover:bg-blue-700 transition" onClick={handleSearch}>
+            <button className="bg-blue-600 text-white rounded hover:bg-blue-700 transition" onClick={() => handleViewMap(property.id)}>
               Search
             </button>
           </form>
@@ -199,7 +201,7 @@ const Rentals = () => {
                   <p>{property.price}</p>
                   <p>{property.location}</p>
                   <p>{property.bedrooms}</p>
-                  <button className="bg-blue-400 rounded p-3" onClick={handleClick}>View on Map</button>
+                  <button className="bg-blue-400 rounded p-3" onClick={() => handleViewMap(property.id)}>View on Map</button>
                 </div>)
             })}
             
