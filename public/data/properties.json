@@ -1,0 +1,456 @@
+{
+  "properties": [
+    {
+      "id": 1,
+      "title": "Modern Studio Apartment",
+      "price": 8000,
+      "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/623977897.jpg?k=66fb4d4747d34e6e452f22af88cab233c9bdffc40d3a09e81d1ee22a3f9d9b8d&o=",
+      "location":"Kochi",
+      "locationmap":{
+                    "lat":9.9312,
+                    "lng":76.2673
+                  },
+      "sqft": 420,
+      "bedrooms": 0,
+      "bathrooms": 1,
+      "amenities": [
+        "pet-friendly",
+        "wifi",
+        "parking"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Compact Studio Near Metro",
+      "price": 7500,
+      "location": "Ernakulam",
+      "locationmap":{
+                      "lat":9.9816,
+                      "lng":76.2999
+                    },
+      "sqft": 390,
+      "bedrooms": 0,
+      "bathrooms": 1,
+      "amenities": [
+        "parking",
+        "security"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Studio Loft Apartment",
+      "price": 9000,
+      "location": "Kakkanad",
+      "locationmap":{"lat":10.0150,"lng":76.3570},
+      "sqft": 450,
+      "bedrooms": 0,
+      "bathrooms": 1,
+      "amenities": [
+        "pet-friendly",
+        "pool"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Cozy 1BHK City View",
+      "price": 12000,
+      "location": "Edappally",
+      "locationmap":{"lat":10.0101,"lng":76.3064},
+      "sqft": 650,
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "amenities": [
+        "parking",
+        "gym"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "1BHK Near IT Park",
+      "price": 13500,
+      "location": "Infopark",
+      "locationmap":{"lat":10.0173,"lng":76.3490},
+      "sqft": 700,
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "amenities": [
+        "parking",
+        "security",
+        "wifi"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Affordable 1BHK Apartment",
+      "price": 11000,
+      "location": "Aluva",
+      "locationmap":{"lat":10.1076,"lng":76.3513},
+      "sqft": 620,
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "amenities": [
+        "pet-friendly",
+        "parking"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Modern 1BHK Flat",
+      "price": 14000,
+      "location": "Vyttila",
+      "locationmap":{"lat":9.9710,"lng":76.2990},
+      "sqft": 720,
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "amenities": [
+        "pool",
+        "gym",
+        "parking"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Lake View 1BHK",
+      "price": 15000,
+      "location": "Marine Drive",
+      "locationmap":{"lat":9.9640,"lng":76.2820},
+      "sqft": 750,
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "amenities": [
+        "parking",
+        "security",
+        "pool"
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Spacious 2BHK Family Apartment",
+      "price": 18000,
+      "image": "https://xhomesg.com.vn/wp-content/uploads/2024/12/thiet-ke-noi-that-chung-cu-2-phong-ngu-28.jpg",
+      "location": "Kakkanad",
+      "locationmap":{"lat":10.0152,"lng":76.3560},
+      "sqft": 950,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "amenities": [
+        "parking",
+        "pet-friendly",
+        "garden"
+      ]
+    },
+    {
+      "id": 10,
+      "title": "2BHK Near Metro Station",
+      "price": 19000,
+      "location": "Kaloor",
+      "locationmap":{"lat":9.9840,"lng":76.3110},
+      "sqft": 980,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "amenities": [
+        "parking",
+        "security"
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Modern 2BHK Flat",
+      "price": 20000,
+      "location": "Thrippunithura",
+      "locationmap":{"lat":9.9565,"lng":76.3412},
+      "sqft": 1000,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "amenities": [
+        "parking",
+        "pool"
+      ]
+    },
+    {
+      "id": 12,
+      "title": "2BHK Premium Apartment",
+      "price": 22000,
+      "location": "Edappally",
+      "locationmap":{"lat":10.0105,"lng":76.3066},
+      "sqft": 1050,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "amenities": [
+        "pool",
+        "gym",
+        "security"
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Garden View 2BHK",
+      "price": 21000,
+      "location": "Aluva",
+      "locationmap":{"lat":10.1080,"lng":76.3520},
+      "sqft": 1020,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "amenities": [
+        "garden",
+        "parking"
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Luxury 2BHK Apartment",
+      "price": 23000,
+      "location": "Panampilly Nagar",
+      "locationmap":{"lat":9.9660,"lng":76.2970},
+      "sqft": 1100,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "amenities": [
+        "pool",
+        "gym",
+        "parking"
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Spacious 2BHK Near Mall",
+      "price": 24000,
+      "location": "Edappally",
+      "locationmap":{"lat":10.0103,"lng":76.3065},
+      "sqft": 1150,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "amenities": [
+        "parking",
+        "security",
+        "wifi"
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Luxury 3BHK Apartment",
+      "price": 28000,
+      "location": "Marine Drive",
+      "locationmap":{"lat":9.9642,"lng":76.2822},
+      "sqft": 1400,
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "amenities": [
+        "pool",
+        "gym",
+        "parking"
+      ]
+    },
+    {
+      "id": 17,
+      "title": "3BHK Family Home",
+      "image": "https://cdn2.atlantamagazine.com/wp-content/uploads/sites/12/2016/07/0716_mintz01_jherr_oneuseonly.jpg",
+      "price": 26000,
+      "location": "Vyttila",
+      "locationmap":{"lat":9.9712,"lng":76.2992},
+      "sqft": 1350,
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "amenities": [
+        "pet-friendly",
+        "garden",
+        "parking"
+      ]
+    },
+    {
+      "id": 18,
+      "title": "Modern 3BHK Flat",
+      "price": 30000,
+      "location": "Kakkanad",
+      "locationmap":{"lat":10.0155,"lng":76.3565},
+      "sqft": 1450,
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "amenities": [
+        "pool",
+        "gym",
+        "security"
+      ]
+    },
+    {
+      "id": 19,
+      "title": "Premium 3BHK Apartment",
+      "price": 32000,
+      "location": "Panampilly Nagar",
+      "locationmap":{"lat":9.9662,"lng":76.2972},
+      "sqft": 1500,
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "amenities": [
+        "pool",
+        "parking",
+        "gym"
+      ]
+    },
+    {
+      "id": 20,
+      "title": "3BHK Near IT Hub",
+      "price": 31000,
+      "location": "Infopark",
+      "locationmap":{"lat":10.0175,"lng":76.3492},
+      "sqft": 1480,
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "amenities": [
+        "parking",
+        "security",
+        "wifi"
+      ]
+    },
+    {
+      "id": 21,
+      "title": "Elegant 3BHK Residence",
+      "price": 33000,
+      "location": "Kadavanthra",
+      "locationmap":{"lat":9.9630,"lng":76.2830},
+      "sqft": 1520,
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "amenities": [
+        "pool",
+        "gym",
+        "security"
+      ]
+    },
+    {
+      "id": 22,
+      "title": "Spacious 4BHK Villa",
+      "price": 45000,
+      "location": "Thrippunithura",
+      "locationmap":{"lat":9.9568,"lng":76.3415},
+      "sqft": 2100,
+      "bedrooms": 4,
+      "bathrooms": 4,
+      "amenities": [
+        "garden",
+        "parking",
+        "pet-friendly"
+      ]
+    },
+    {
+      "id": 23,
+      "title": "Luxury 4BHK Penthouse",
+      "price": 52000,
+      "location": "Marine Drive",
+      "locationmap":{"lat":9.9645,"lng":76.2825},
+      "sqft": 2400,
+      "bedrooms": 4,
+      "bathrooms": 4,
+      "amenities": [
+        "pool",
+        "gym",
+        "terrace"
+      ]
+    },
+    {
+      "id": 24,
+      "title": "4BHK Duplex Home",
+      "price": 48000,
+      "location": "Kakkanad",
+      "locationmap":{"lat":10.0160,"lng":76.3570},
+      "sqft": 2200,
+      "bedrooms": 4,
+      "bathrooms": 4,
+      "amenities": [
+        "parking",
+        "garden"
+      ]
+    },
+    {
+      "id": 25,
+      "title": "Large 4BHK Family Villa",
+      "price": 50000,
+      "location": "Aluva",
+      "locationmap":{"lat":10.1085,"lng":76.3525},
+      "sqft": 2300,
+      "bedrooms": 4,
+      "bathrooms": 4,
+      "amenities": [
+        "pet-friendly",
+        "parking",
+        "garden"
+      ]
+    },
+    {
+      "id": 26,
+      "title": "Executive 5BHK Villa",
+      "price": 65000,
+      "location": "Panampilly Nagar",
+      "locationmap":{"lat":9.9665,"lng":76.2975},
+      "sqft": 3000,
+      "bedrooms": 5,
+      "bathrooms": 5,
+      "amenities": [
+        "pool",
+        "gym",
+        "parking"
+      ]
+    },
+    {
+      "id": 27,
+      "title": "Luxury 5BHK Mansion",
+      "price": 72000,
+      "location": "Marine Drive",
+      "locationmap":{"lat":9.9650,"lng":76.2830},
+      "sqft": 3400,
+      "bedrooms": 5,
+      "bathrooms": 5,
+      "amenities": [
+        "pool",
+        "terrace",
+        "gym"
+      ]
+    },
+    {
+      "id": 28,
+      "title": "5BHK Premium Villa",
+      "price": 68000,
+      "location": "Kakkanad",
+      "locationmap":{"lat":10.0165,"lng":76.3575},
+      "sqft": 3100,
+      "bedrooms": 5,
+      "bathrooms": 5,
+      "amenities": [
+        "parking",
+        "garden",
+        "security"
+      ]
+    },
+    {
+      "id": 29,
+      "title": "Grand 6BHK Estate",
+      "price": 85000,
+      "location": "Thrippunithura",
+      "locationmap":{"lat":9.9570,"lng":76.3420},
+      "sqft": 4200,
+      "bedrooms": 6,
+      "bathrooms": 6,
+      "amenities": [
+        "pool",
+        "garden",
+        "parking"
+      ]
+    },
+    {
+      "id": 30,
+      "title": "Ultra Luxury 6BHK Villa",
+      "price": 95000,
+      "location": "Marine Drive",
+      "locationmap":{"lat":9.9655,"lng":76.2835},
+      "sqft": 4600,
+      "bedrooms": 6,
+      "bathrooms": 6,
+      "amenities": [
+        "pool",
+        "gym",
+        "terrace",
+        "parking"
+      ]
+    }
+  ]
+}

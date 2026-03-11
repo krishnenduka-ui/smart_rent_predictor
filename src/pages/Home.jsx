@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom"
-
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+
+  const navigate = useNavigate()
   
   const featuredProperties = [
     {
@@ -24,8 +26,15 @@ const Home = () => {
     },
   ];
 
+
+  const handleClick = () =>{
+    navigate ("/rentals")
+  }
+
   return (
       <div className="min-h-screen">
+
+
         <section className="bg-blue-700 text-white font-bold text-center p-20">
           <h1 className="sm:text-3xl md:text-4xl lg:text-5xl ">Find Your Perfect Rental</h1>
           <p className="mt-5 sm:text-sm md:text-base lg:text-lg">Smart rent estimation based on location and property features</p>
@@ -35,6 +44,9 @@ const Home = () => {
             </button>
           </Link>
         </section>
+
+
+
 
         <section className="py-16 px-6">
           <h2 className="text-center sm:text-xl md:text-2xl lg:text-3xl font-bold">Featured Properties</h2>
@@ -62,11 +74,10 @@ const Home = () => {
         <section className="bg-gray-100 py-16 px-6 text-center">
           <h2 className="text-center sm:text-xl md:text-2xl lg:text-3xl font-bold">Explore Properties on Map</h2>
           <p className="mt-6 text-gray-700">See the properties on map</p>
-           <Link to="/map">
-            <button className="mt-6 bg-blue-600 text-white font-semibold px-6 py-3 rounded hover:text-gray-300">
+          <button className="mt-6 bg-blue-600 text-white font-semibold px-6 py-3 rounded hover:text-gray-300" onClick={handleClick}>
               View Map
-            </button>
-          </Link>
+          </button>
+        
         </section>
         
 
