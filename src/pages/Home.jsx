@@ -1,32 +1,22 @@
 import { Link } from "react-router-dom"
 import { useNavigate } from "react-router-dom";
+import {fetchProperties} from '../features/propertySlice'
+import { useSelector,useDispatch } from "react-redux";
+import { useEffect } from "react";
+
 
 const Home = () => {
 
+  const dispatch = useDispatch()
   const navigate = useNavigate()
-  
-  const featuredProperties = [
-    {
-      id: 1,
-      title: "Modern 2 Bedroom Apartment",
-      price: 15000,
-      image: "https://xhomesg.com.vn/wp-content/uploads/2024/12/thiet-ke-noi-that-chung-cu-2-phong-ngu-28.jpg"
-    },
-    {
-      id: 2,
-      title: "Luxury Studio",
-      price: 8000,
-      image: "https://cf.bstatic.com/xdata/images/hotel/max1024x768/623977897.jpg?k=66fb4d4747d34e6e452f22af88cab233c9bdffc40d3a09e81d1ee22a3f9d9b8d&o="
-    },
-    {
-      id: 3,
-      title: "Cozy Family Home",
-      price: 30000,
-      image: "https://cdn2.atlantamagazine.com/wp-content/uploads/sites/12/2016/07/0716_mintz01_jherr_oneuseonly.jpg"
-    },
-  ];
+  const properties = useSelector((state) => state.properties.properties)
 
+   useEffect(() => {
+      dispatch(fetchProperties());
+    }, []);
 
+  const featuredProperties = properties.filter((property) => property.featured===true)
+ 
   const handleClick = () =>{
     navigate ("/rentals")
   }
@@ -44,6 +34,11 @@ const Home = () => {
             </button>
           </Link>
         </section>
+
+
+
+
+
 
 
 
@@ -71,6 +66,14 @@ const Home = () => {
          </div>
         </section >
             
+   
+   
+   
+   
+   
+   
+   
+   
         <section className="bg-gray-100 py-16 px-6 text-center">
           <h2 className="text-center sm:text-xl md:text-2xl lg:text-3xl font-bold">Explore Properties on Map</h2>
           <p className="mt-6 text-gray-700">See the properties on map</p>

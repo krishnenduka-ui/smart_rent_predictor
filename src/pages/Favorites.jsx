@@ -1,41 +1,22 @@
 import { Link } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
+import { removeFavorite } from "../features/propertySlice";
 
 const Favorites = () => {
 
-  const favorites = [
-     {
-      id: 1,
-      title: "Modern 2 Bedroom Apartment",
-      price: 15000,
-      location: "Punkunnam,Thrissur",
-      bedrooms: 2,
-      bathrooms: 1,
-      area: "950 sq.ft",
-      image: "https://xhomesg.com.vn/wp-content/uploads/2024/12/thiet-ke-noi-that-chung-cu-2-phong-ngu-28.jpg",
-    },
-    {
-      id: 2,
-      title: "Luxury Studio Downtown",
-      price: "8000/month",
-      location: "Ayyanthole,Thrissur",
-      bedrooms: 1,
-      bathrooms: 1,
-      area: "600 sq.ft",
-      image: "https://cf.bstatic.com/xdata/images/hotel/max1024x768/623977897.jpg?k=66fb4d4747d34e6e452f22af88cab233c9bdffc40d3a09e81d1ee22a3f9d9b8d&o=",
-    },
-    {
-      id: 3,
-      title: "Cozy Family Home",
-      price: 30000,
-      location: "Amala,Thrissur",
-      bedrooms: 3,
-      bathrooms: 2,
-      area: "1200 sq.ft",
-      image: "https://cdn2.atlantamagazine.com/wp-content/uploads/sites/12/2016/07/0716_mintz01_jherr_oneuseonly.jpg",
-    }
-  ];
+      const dispatch = useDispatch()
+      const favorites = useSelector((state) => state.properties.favorites)
 
+if (favorites.length === 0) {
+    return (
+      <div className="bg-gray-50 min-h-screen px-6 py-16 text-center">
+        <h1 className="text-3xl md:text-4xl font-bold mb-4">
+          No Favorites Yet
+        </h1>
+      </div>)
+}
   return (
+    
     <div className="bg-gray-50 min-h-screen px-6 py-16">
 
       {/* Header */}
@@ -60,7 +41,6 @@ const Favorites = () => {
             {/* Property Image */}
             <img
               src={property.image}
-              alt={property.title}
               className="w-full h-52 object-cover"
             />
 
@@ -96,7 +76,7 @@ const Favorites = () => {
                   View Details
                 </Link>
 
-                <button className="flex-1 bg-red-500 text-white py-2 rounded hover:bg-red-600 transition">
+                <button className="flex-1 bg-red-500 text-white py-2 rounded hover:bg-red-600 transition" onClick={() => dispatch(removeFavorite(property))}>
                   Remove
                 </button>
 
