@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { fetchProperties} from "../features/propertySlice";
+import { fetchProperties, searchProperty } from "../features/propertySlice";
 import { useNavigate } from "react-router-dom";
 
 const Rentals = () => {
@@ -13,9 +13,10 @@ const Rentals = () => {
   const [searchLocation, setSearchLocation] = useState("")
   const [selectedPriceRange, setSelectedPriceRange] = useState("")
   const [selectedBedrooms, setSelectedBedrooms] = useState("")
-
-
-  const [searchProperies, setSearchProperties] = useState([])
+  const [selectType, setSelectType] = useState("")
+  const [selectBathrooms, setSelectBathrooms] = useState("")
+  const [selectAmenities, setSelectAmenities] = useState([])
+  
 
 
   useEffect(() => {
@@ -50,24 +51,57 @@ const Rentals = () => {
 
     .filter((property) => {
 
-      if (selectedBedrooms === 0) {
+      if (selectedBedrooms === "0") {
 
-        return property.bedrooms === 0
+        return property.bedrooms == 0
 
       }
-      else if (selectedBedrooms === 1) {
-        return property.bedrooms === 1
+      else if (selectedBedrooms === "1") {
+        return property.bedrooms == 1
       }
-      else if (selectedBedrooms === 2) {
-        return property.bedrooms === 2
+      else if (selectedBedrooms === "2") {
+        return property.bedrooms == 2
       }
-      else if (selectedBedrooms === 3) {
+      else if (selectedBedrooms === "3") {
         return property.bedrooms >= 3
       }
       else
         return true
 
     })
+
+    .filter((property) =>
+      property.title.toLowerCase().includes(selectType.toLowerCase())
+    )
+
+    .filter((property) => {
+
+      if (selectBathrooms === "0") {
+
+        return property.bathrooms == 0
+
+      }
+      else if (selectBathrooms === "1") {
+        return property.bathrooms == 1
+      }
+      else if (selectBathrooms === "2") {
+        return property.bathrooms == 2
+      }
+      else if (selectBathrooms === "3") {
+        return property.bathrooms >= 3
+      }
+      else
+        return true
+
+    })
+
+    .filter((property) =>
+      selectAmenities.length === 0
+        ? true
+        : selectAmenities.every((amenity) =>
+          property.amenities.includes(amenity)
+        )
+    )
 
 
 
@@ -77,12 +111,20 @@ const Rentals = () => {
   })
 
 
- const handleViewMap = (id)=>{
+  const handleViewMap = (id) => {
 
-  navigate(`/map/${id}`)
- }
+    navigate(`/map/${id}`)
+  }
 
+  const handleAmenities = (e) => {
+    const { value, checked } = e.target;
 
+    setSelectAmenities((prev) =>
+      checked
+        ? [...prev, value]
+        : prev.filter((amenity) => amenity !== value)
+    );
+  };
 
 
   return (
@@ -107,7 +149,7 @@ const Rentals = () => {
               type="text"
               placeholder="Location"
               className="p-3 border rounded"
-              name={searchLocation}
+              value={searchLocation}
               onInput={(e) => setSearchLocation(e.target.value)}
 
 
@@ -115,26 +157,26 @@ const Rentals = () => {
 
             <select className="p-3 border rounded"
               value={selectedPriceRange}
-              onChange={(e) => setSelectedPriceRange(e.target.value)}
+              onInput={(e) => setSelectedPriceRange(e.target.value)}
             >
-              <option value={" "}>Price Range</option>
-              <option value={5000 - 10000}>5000 - 10000</option>
-              <option value={10000 - 15000}>10000 - 15000</option>
-              <option value={15000}>15000+</option>
+              <option value=" ">Price Range</option>
+              <option value="5000-10000">5000 - 10000</option>
+              <option value="10000-15000">10000 - 15000</option>
+              <option value="15000">15000+</option>
             </select>
 
             <select className="p-3 border rounded"
               value={selectedBedrooms}
-              onChange={(e) => setSelectedBedrooms(e.target.value)}
+              onInput={(e) => setSelectedBedrooms(e.target.value)}
             >
-              <option value={" "} >Bedrooms</option>
-              <option value={0}>Studio</option>
-              <option value={1}>1 Bedroom</option>
-              <option value={2}>2 Bedroom</option>
-              <option value={3}>3+ Bedrooms</option>
+              <option value=" " >Bedrooms</option>
+              <option value="0">Studio</option>
+              <option value="1">1 Bedroom</option>
+              <option value="2">2 Bedroom</option>
+              <option value="3">3+ Bedrooms</option>
             </select>
 
-            <button className="bg-blue-600 text-white rounded hover:bg-blue-700 transition" onClick={() => handleViewMap(property.id)}>
+            <button className="bg-blue-600 text-white rounded hover:bg-blue-700 transition" onClick={handleSearch} >
               Search
             </button>
           </form>
@@ -153,38 +195,49 @@ const Rentals = () => {
 
           <div className="mb-4">
             <label className="block mb-2 font-medium">Property Type</label>
-            <select className="w-full p-2 border rounded">
-              <option>Select type</option>
-              <option>Apartment</option>
-              <option>Studio</option>
-              <option>House</option>
+            <select className="w-full p-2 border rounded"
+              value={selectType}
+              onInput={(e) => setSelectType(e.target.value)}>
+              <option value=" ">Select type</option>
+              <option value="apartment">Apartment</option>
+              <option value="studio">Studio</option>
+              <option value="house">House</option>
             </select>
           </div>
 
 
           <div className="mb-4">
-            <label className="block mb-2 font-medium">Bedrooms</label>
-            <select className="w-full p-2 border rounded">
-              <option>Bedrooms</option>
-              <option>1</option>
-              <option>2</option>
-              <option>3+</option>
+            <label className="block mb-2 font-medium">Bathrooms</label>
+            <select className="w-full p-2 border rounded"
+              value={selectBathrooms}
+              onInput={(e) => setSelectBathrooms(e.target.value)}>
+              <option value=" ">Bathrooms</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3+</option>
             </select>
           </div>
 
 
-          <div>
+          <div >
             <label className="block mb-2 font-medium">Amenities</label>
             <div className="flex flex-col">
               <label>
-                <input type="checkbox" /> Pet-friendly
+                <input type="checkbox" value="pet-friendly" onChange={handleAmenities} /> Pet-friendly
               </label>
               <label>
-                <input type="checkbox" /> Parking
+                <input type="checkbox" value="parking" onChange={handleAmenities} /> Parking
               </label>
               <label>
-                <input type="checkbox" /> Pool
+                <input type="checkbox" value="pool" onChange={handleAmenities} /> Pool
               </label>
+              <label>
+                <input type="checkbox" value="security" onChange={handleAmenities} /> Security
+              </label>
+              <label>
+                <input type="checkbox" value="gym" onChange={handleAmenities} /> gym
+              </label>
+
             </div>
           </div>
         </div>
@@ -204,7 +257,7 @@ const Rentals = () => {
                   <button className="bg-blue-400 rounded p-3" onClick={() => handleViewMap(property.id)}>View on Map</button>
                 </div>)
             })}
-            
+
 
         </div>
 

@@ -15,7 +15,7 @@ const Properties = () => {
 
   return (
     <div className='min-h-screen text-center '>
-      <div>
+       <div className='flex justify-center items-center gap-4'>
         <img className='w-100 h-100 p-8 ' src={property.image} />
       </div>
       <h2 className='text-2xl font-semibold'>{property.title}</h2>

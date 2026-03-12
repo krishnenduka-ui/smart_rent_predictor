@@ -23,6 +23,10 @@ const propertySlice = createSlice({
     name: "properties",
     initialState,
     reducers: {
+         searchProperty:(state,action) =>{
+            state.search = action.payload
+
+        },
         addFavorite: (state, action) => {
             const exists = state.favorites.find(
                 (property) => property.id === action.payload.id
@@ -60,7 +64,7 @@ const propertySlice = createSlice({
 })
 
 
-export const { addFavorite ,removeFavorite} = propertySlice.actions
+export const {searchProperty, addFavorite ,removeFavorite} = propertySlice.actions
 export default propertySlice.reducer
 
 

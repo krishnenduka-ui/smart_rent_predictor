@@ -4,458 +4,600 @@
       "id": 1,
       "title": "Modern Studio Apartment",
       "price": 8000,
-      "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/623977897.jpg?k=66fb4d4747d34e6e452f22af88cab233c9bdffc40d3a09e81d1ee22a3f9d9b8d&o=",
-      "location":"Kochi",
-      "locationmap":{
-                    "lat":9.9312,
-                    "lng":76.2673
-                  },
+      "image": "https://cdn.home-designing.com/wp-content/uploads/2017/05/scandinavian-inspired-studio-apartment-decor-1024x717.jpg",
+      "gallery": [
+        "https://cdn.home-designing.com/wp-content/uploads/2017/05/scandinavian-inspired-studio-apartment-decor-1024x717.jpg",
+        "https://www.mydomaine.com/thmb/XJ16S5w4KjbyF787VvO3t-mKuEk=/700x0/filters:no_upscale():strip_icc()/cdn.cliqueinc.com__cache__posts__86984__yes-its-possible-to-live-well-in-a-studio-apartmentheres-how-1752664-1461975810.700x0c-24f94fa774f94a5da6ed59c5214ac258-ba081ed9561f498db441eadd80897ada.jpg",
+        "https://i.pinimg.com/236x/b9/6d/01/b96d01f225e5fa84281d70d77f5ba60d.jpg"
+      ],
+      "location": "Kochi",
+      "locationmap": {
+        "lat": 9.9312,
+        "lng": 76.2673
+      },
       "sqft": 420,
       "bedrooms": 0,
       "bathrooms": 1,
+      "rating":4.9,
       "amenities": [
         "pet-friendly",
         "wifi",
         "parking"
       ],
-      "featured" : true
+      "neighbourhoods": [
+        "school",
+        "temple",
+        "hospital",
+        "shopping_mall"
+      ],
+      "featured": true
     },
+    
+    
+    
     {
       "id": 2,
       "title": "Compact Studio Near Metro",
       "price": 7500,
+      "image":"https://homebazaar-blog.s3.ap-south-1.amazonaws.com/knowledge/wp-content/uploads/2022/10/24122439/FeatureImage_Overview-Of-A-Studio-Apartment.webp",
+      "gallery":["https://homebazaar-blog.s3.ap-south-1.amazonaws.com/knowledge/wp-content/uploads/2022/10/24122439/FeatureImage_Overview-Of-A-Studio-Apartment.webp",
+                
+               "https://housedesign.techinfus.com/images/article/thumb/718-0/2017/04/interer-kvartiry-studii-31.jpg",
+               "https://livezoku.com/copenhagen/wp-content/uploads/sites/2/2023/03/Zoku-CPH-113.jpg"
+    
+                ],
       "location": "Ernakulam",
-      "locationmap":{
-                      "lat":9.9816,
-                      "lng":76.2999
-                    },
+      "locationmap": {
+        "lat": 9.9816,
+        "lng": 76.2999
+      },
       "sqft": 390,
       "bedrooms": 0,
       "bathrooms": 1,
+      "rating":4.8,
       "amenities": [
         "parking",
         "security"
+      ],
+      "neighbourhoods": [
+        "school",
+        "shopping_mall"
       ]
     },
+    
+  
     {
       "id": 3,
-      "title": "Studio Loft Apartment",
-      "price": 9000,
-      "location": "Kakkanad",
-      "locationmap":{"lat":10.0150,"lng":76.3570},
-      "sqft": 450,
-      "bedrooms": 0,
-      "bathrooms": 1,
-      "amenities": [
-        "pet-friendly",
-        "pool"
-      ]
-    },
-    {
-      "id": 4,
       "title": "Cozy 1BHK City View",
       "price": 12000,
+      "image":"https://cf.bstatic.com/xdata/images/hotel/max1024x768/612882248.jpg?k=bd41471917211672c159cbe6b5892695b6f3c3ca7bbaeaef5fcae844dc77d5a3&o=",
+      "gallery":["https://cf.bstatic.com/xdata/images/hotel/max1024x768/612882248.jpg?k=bd41471917211672c159cbe6b5892695b6f3c3ca7bbaeaef5fcae844dc77d5a3&o=",
+                "https://cf.bstatic.com/xdata/images/hotel/max1024x768/612882314.jpg?k=a92dd0592a13d59c8ec2e84c630cb6681899ef1f82c219fee03cc86e7ad73e5c&o=",
+                "https://cf.bstatic.com/xdata/images/hotel/max1024x768/612882279.jpg?k=47e6158b6a4526333eb3341079b5fead5c545da810c25592ef3a9e50ce8e7f98&o="],
       "location": "Edappally",
-      "locationmap":{"lat":10.0101,"lng":76.3064},
+      "locationmap": {
+        "lat": 10.0101,
+        "lng": 76.3064
+      },
       "sqft": 650,
       "bedrooms": 1,
       "bathrooms": 1,
+      "rating":4.4,
       "amenities": [
         "parking",
         "gym"
+      ],
+      "neighbourhoods": [
+        "school",
+        "hospital",
+        "shopping_mall"
       ]
     },
+
+
     {
-      "id": 5,
+      "id": 4,
       "title": "1BHK Near IT Park",
       "price": 13500,
+      "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO-3TI-G08fK6CvpIWJQZ6ryt6vCSmle9Rvg&s",
+      "gallery":["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO-3TI-G08fK6CvpIWJQZ6ryt6vCSmle9Rvg&s",
+                "https://images.livspace-cdn.com/w:3840/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/ond-1634120396-Obfdc/amj-2024-1711965337-VsMIK/1homes-1716796480-ZjTwu/54leela-mulchandani-1721380260-FBND2/br-1721380289-6vOiY.jpg",
+                "https://images.livspace-cdn.com/w:3840/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/ond-1634120396-Obfdc/amj-2024-1711965337-VsMIK/1homes-1716796480-ZjTwu/54leela-mulchandani-1721380260-FBND2/br-1-1721380286-oB7ZI.jpg"],
       "location": "Infopark",
-      "locationmap":{"lat":10.0173,"lng":76.3490},
+      "locationmap": {
+        "lat": 10.0173,
+        "lng": 76.3490
+      },
       "sqft": 700,
       "bedrooms": 1,
       "bathrooms": 1,
+      "rating":4.1,
       "amenities": [
         "parking",
         "security",
         "wifi"
       ],
-      "featured" : true
+      "neighbourhoods": [
+        "hospital",
+        "hypermarket"
+      ],
+      "featured": true
     },
+    
+    
     {
-      "id": 6,
+      "id": 5,
       "title": "Affordable 1BHK Apartment",
       "price": 11000,
+      "image":"https://www.homebazaar.com/knowledge/wp-content/uploads/2022/08/featureimage_1bhkflatdesigns-750x375.webp",
+      "gallery":["https://www.homebazaar.com/knowledge/wp-content/uploads/2022/08/featureimage_1bhkflatdesigns-750x375.webp",
+                  "https://media.designcafe.com/wp-content/uploads/2021/11/26115936/1-bhk-kitchen-design-with-handleless-cabinets-open-shelves-in-built-hob-and-chimney.jpg",
+                  "https://media.designcafe.com/wp-content/uploads/2021/11/26115941/bedroom-with-a-geometric-wallpaper-and-bed-with-cushioned-headboard-in-1-bhk-flat-design.jpg"],
       "location": "Aluva",
-      "locationmap":{"lat":10.1076,"lng":76.3513},
+      "locationmap": {
+        "lat": 10.1076,
+        "lng": 76.3513
+      },
       "sqft": 620,
       "bedrooms": 1,
       "bathrooms": 1,
+      "rating":4.4,
       "amenities": [
         "pet-friendly",
         "parking"
+      ],
+      "neighbourhoods": [
+        "temple",
+        "school"
       ]
     },
+   
+   
     {
-      "id": 7,
+      "id": 6,
       "title": "Modern 1BHK Flat",
       "price": 14000,
+      "image":"https://media.designcafe.com/wp-content/uploads/2021/04/06180844/elegant-1bhk-home-design-with-neutral-tones.jpg",
+      "gallery":["https://media.designcafe.com/wp-content/uploads/2021/04/06180844/elegant-1bhk-home-design-with-neutral-tones.jpg",
+                "https://media.designcafe.com/wp-content/uploads/2021/04/06180831/elegant-1bhk-home-design-with-l-shaped-modular-kitchen-in-light-wood.jpg",
+                "https://media.designcafe.com/wp-content/uploads/2021/04/06180744/1bhk-house-bedroom-designed-with-entertainment-unit-with-low-lying-cabinets-in-wood.jpg"],
       "location": "Vyttila",
-      "locationmap":{"lat":9.9710,"lng":76.2990},
+      "locationmap": {
+        "lat": 9.9710,
+        "lng": 76.2990
+      },
       "sqft": 720,
       "bedrooms": 1,
       "bathrooms": 1,
+      "rating":4.7,
       "amenities": [
         "pool",
         "gym",
         "parking"
+      ],
+      "neighbourhoods": [
+        "church",
+        "hospital",
+        "shopping_mall"
+      ]
+    },
+    
+
+    {
+      "id": 7,
+      "title": "Spacious 2BHK Family Apartment",
+      "price": 18000,
+      "image": "https://media.designcafe.com/wp-content/uploads/2021/09/30120702/2bhk-living-room-with-yellow-wallpaper-and-sofa.jpg",
+      "gallery":["https://media.designcafe.com/wp-content/uploads/2021/09/30120702/2bhk-living-room-with-yellow-wallpaper-and-sofa.jpg",
+                "https://media.designcafe.com/wp-content/uploads/2021/09/30120635/2bhk-design-bedroom-in-green-and-white-with-hanging-lights-one-side.jpg",
+                "https://media.designcafe.com/wp-content/uploads/2021/09/30120720/master-bedroom-in-2bhk-home-designed-with-led-lit-accent-wall.jpg",
+                 "https://media.designcafe.com/wp-content/uploads/2021/09/30120657/2bhk-kitchen-design-with-floral-tiled-backsplash.jpg"],
+      "location": "Kakkanad",
+      "locationmap": {
+        "lat": 10.0152,
+        "lng": 76.3560
+      },
+      "sqft": 950,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "rating":4.5,
+      "amenities": [
+        "parking",
+        "pet-friendly",
+        "garden"
+      ],
+      "neighbourhoods": [
+        "shopping_mall",
+        "hypermarket"
       ]
     },
     {
       "id": 8,
-      "title": "Lake View 1BHK",
-      "price": 15000,
-      "location": "Marine Drive",
-      "locationmap":{"lat":9.9640,"lng":76.2820},
-      "sqft": 750,
-      "bedrooms": 1,
-      "bathrooms": 1,
-      "amenities": [
-        "parking",
-        "security",
-        "pool"
-      ],
-      "featured" : true
-    },
-    {
-      "id": 9,
-      "title": "Spacious 2BHK Family Apartment",
-      "price": 18000,
-      "image": "https://xhomesg.com.vn/wp-content/uploads/2024/12/thiet-ke-noi-that-chung-cu-2-phong-ngu-28.jpg",
-      "location": "Kakkanad",
-      "locationmap":{"lat":10.0152,"lng":76.3560},
-      "sqft": 950,
-      "bedrooms": 2,
-      "bathrooms": 2,
-      "amenities": [
-        "parking",
-        "pet-friendly",
-        "garden"
-      ]
-    },
-    {
-      "id": 10,
       "title": "2BHK Near Metro Station",
       "price": 19000,
+      "image":"https://media.designcafe.com/wp-content/uploads/2021/08/25191006/2bhk-interior-design-with-white-marble-flooring-and-sofa.jpg",
+      "gallery":["https://media.designcafe.com/wp-content/uploads/2021/08/25191006/2bhk-interior-design-with-white-marble-flooring-and-sofa.jpg",
+                "https://media.designcafe.com/wp-content/uploads/2021/08/25190958/2bhk-interior-design-ideas-in-kitchen-with-inbuilt-hob.jpg",
+                "https://media.designcafe.com/wp-content/uploads/2021/08/25191024/2bhk-interior-with-kids-bedroom-with-beautiful-accent-wall-in-pink.jpg",
+                "https://media.designcafe.com/wp-content/uploads/2021/08/25191015/2bhk-interior-ideas-with-neutral-clours-and-flooring.jpg"],
       "location": "Kaloor",
-      "locationmap":{"lat":9.9840,"lng":76.3110},
+      "locationmap": {
+        "lat": 9.9840,
+        "lng": 76.3110
+      },
       "sqft": 980,
       "bedrooms": 2,
       "bathrooms": 2,
+      "rating":3.9,
       "amenities": [
         "parking",
         "security"
+      ],
+      "neighbourhoods": [
+        "school",
+        "hospital"
       ]
     },
+    
+    
+    
     {
-      "id": 11,
-      "title": "Modern 2BHK Flat",
-      "price": 20000,
-      "location": "Thrippunithura",
-      "locationmap":{"lat":9.9565,"lng":76.3412},
-      "sqft": 1000,
-      "bedrooms": 2,
-      "bathrooms": 2,
-      "amenities": [
-        "parking",
-        "pool"
-      ]
-    },
-    {
-      "id": 12,
+      "id": 9,
       "title": "2BHK Premium Apartment",
       "price": 22000,
+      "image":"https://onerajarhat.com/wp/wp-content/uploads/2019/08/how-to-make-your-premium-apartments-look-more-attractive-feature-image.jpg",
+      "gallery":["https://onerajarhat.com/wp/wp-content/uploads/2019/08/how-to-make-your-premium-apartments-look-more-attractive-feature-image.jpg",
+                "https://onerajarhat.com/wp/wp-content/uploads/2019/08/how-to-make-your-premium-apartments-look-more-attractive.jpg",
+                "https://avaantiresidences.com/wp-content/uploads/2020/02/DSC_4818-EDIT-1.jpg",
+                "https://media.designcafe.com/wp-content/uploads/2024/02/22183423/luxury-kitchen-designs.jpg",
+                "https://images.livspace-cdn.com/w:3840/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/ond-1634120396-Obfdc/1-2025-1736068988-NDPD1/jas-1751884202-slYBH/td-1753251350-0wTlI/td-23-1755771485-9G1l9.jpg"],
       "location": "Edappally",
-      "locationmap":{"lat":10.0105,"lng":76.3066},
+      "locationmap": {
+        "lat": 10.0105,
+        "lng": 76.3066
+      },
       "sqft": 1050,
       "bedrooms": 2,
       "bathrooms": 2,
+      "rating":4.3,
       "amenities": [
         "pool",
         "gym",
         "security"
       ],
-      "featured" : true
+      "neighbourhoods": [
+        "school",
+        "shopping_mall",
+        "hypermarket"
+      ],
+      "featured": true
     },
+
     {
-      "id": 13,
+      "id": 10,
       "title": "Garden View 2BHK",
       "price": 21000,
       "location": "Aluva",
-      "locationmap":{"lat":10.1080,"lng":76.3520},
+      "image":"https://img.freepik.com/premium-photo/luxurious-modern-garden-with-pool-patio_1410957-48281.jpg",
+      "gallery":["https://img.freepik.com/premium-photo/luxurious-modern-garden-with-pool-patio_1410957-48281.jpg",
+                "https://www.decorpot.com/images/39775191615-stunning-2bhk-interior-design-ideas-2023.jpg",
+                "https://www.decorpot.com/images/blogimage286022911open-concept-living.jpg",
+                "https://www.decorpot.com/images/blogimage1446730969multipurpose-furniture.jpg",
+                "https://media.designcafe.com/wp-content/uploads/2020/09/25151958/master-bedroom-design-in-2bhk-home-apartment.jpg"],
+      "locationmap": {
+        "lat": 10.1080,
+        "lng": 76.3520
+      },
       "sqft": 1020,
       "bedrooms": 2,
       "bathrooms": 2,
+      "rating":4.6,
       "amenities": [
         "garden",
-        "parking"
+        "parking",
+        "pool"
       ],
-      "featured" : true
+      "neighbourhoods": [
+        "hospital",
+        "temple",
+        "school"
+      ],
+      "featured": true
     },
     {
-      "id": 14,
+      "id": 11,
       "title": "Luxury 2BHK Apartment",
       "price": 23000,
+      "image":"https://psgroup.in/blog/wp-content/uploads/2021/02/Navyom-Living-dining-1.jpg",
+      "gallery":["https://psgroup.in/blog/wp-content/uploads/2021/02/Navyom-Living-dining-1.jpg",
+                "https://psgroup.in/blog/wp-content/uploads/2021/06/pexels-pixabay-534151.jpg",
+                "https://psgroup.in/blog/wp-content/uploads/2021/06/pexels-pixabay-262048.jpg",
+                "https://psgroup.in/blog/wp-content/uploads/2021/06/pexels-karl-solano-2883049.jpg",
+                "https://psgroup.in/blog/wp-content/uploads/2021/06/pexels-vecislavas-popa-1743229.jpg"],
       "location": "Panampilly Nagar",
-      "locationmap":{"lat":9.9660,"lng":76.2970},
+      "locationmap": {
+        "lat": 9.9660,
+        "lng": 76.2970
+      },
       "sqft": 1100,
       "bedrooms": 2,
       "bathrooms": 2,
+      "rating":4.0,
       "amenities": [
         "pool",
         "gym",
         "parking"
       ],
-      "featured" : true
+      "neighbourhoods": [
+        "church",
+        "shopping_mall",
+        "hospital"
+      ],
+      "featured": true
     },
+    
     {
-      "id": 15,
-      "title": "Spacious 2BHK Near Mall",
-      "price": 24000,
-      "location": "Edappally",
-      "locationmap":{"lat":10.0103,"lng":76.3065},
-      "sqft": 1150,
-      "bedrooms": 2,
-      "bathrooms": 2,
-      "amenities": [
-        "parking",
-        "security",
-        "wifi"
-      ]
-    },
-    {
-      "id": 16,
+      "id": 12,
       "title": "Luxury 3BHK Apartment",
       "price": 28000,
+      "image":"https://onerajarhat.com/wp/wp-content/uploads/2019/07/one-rajarhat-luxury-apartments-in-kolkata-with-infinity-swimming-pool-04.jpg",
+      "gallery":["https://onerajarhat.com/wp/wp-content/uploads/2019/07/one-rajarhat-luxury-apartments-in-kolkata-with-infinity-swimming-pool-04.jpg",
+                "https://onerajarhat.com/wp/wp-content/uploads/2019/07/one-rajarhat-luxury-apartments-in-kolkata-with-infinity-swimming-pool-05.jpg",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdbTx23b1DY1kuBey83laViEa2vlRsMZLweg&s",
+                "https://blog.nkrealtors.com/wp-content/uploads/2016/09/luxury-apartment-in-kolkata.jpg",
+                "https://img.staticmb.com/mbphoto/property/cropped_images/2026/Feb/08/Photo_h470_w1080/83248859_3_rumptower989_470_1080.jpg"],  
       "location": "Marine Drive",
-      "locationmap":{"lat":9.9642,"lng":76.2822},
+      "locationmap": {
+        "lat": 9.9642,
+        "lng": 76.2822
+      },
       "sqft": 1400,
       "bedrooms": 3,
       "bathrooms": 3,
+      "rating":3.9,
       "amenities": [
         "pool",
         "gym",
         "parking"
+      ],
+      "neighbourhoods": [
+        "temple",
+        "church",
+        "shopping_mall"
       ]
     },
+    
     {
-      "id": 17,
-      "title": "3BHK Family Home",
-      "image": "https://cdn2.atlantamagazine.com/wp-content/uploads/sites/12/2016/07/0716_mintz01_jherr_oneuseonly.jpg",
-      "price": 26000,
-      "location": "Vyttila",
-      "locationmap":{"lat":9.9712,"lng":76.2992},
-      "sqft": 1350,
-      "bedrooms": 3,
-      "bathrooms": 2,
-      "amenities": [
-        "pet-friendly",
-        "garden",
-        "parking"
-      ]
-    },
-    {
-      "id": 18,
+      "id": 13,
       "title": "Modern 3BHK Flat",
       "price": 30000,
+      "image":"https://www.mvnaeroone.com/assets/images/living-dining-1bhk.jpeg",
+      "gallery":["https://www.mvnaeroone.com/assets/images/living-dining-1bhk.jpeg",
+                "https://www.mvnaeroone.com/assets/images/kitchen-1bhk.jpeg",
+                "https://www.mvnaeroone.com/assets/images/bedroom-1bhk.jpeg",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrwx6ciPUtUwynA9_U4y4QW_vwAatDISw2Kg&s",
+                "https://housing-images.n7net.in/01c16c28/39228223c1ac02aaff7c4d809c9384d0/v0/medium/3_bhk_apartment-for-sale-bavdhan-Pune-hall.jpg"],
       "location": "Kakkanad",
-      "locationmap":{"lat":10.0155,"lng":76.3565},
+      "locationmap": {
+        "lat": 10.0155,
+        "lng": 76.3565
+      },
       "sqft": 1450,
       "bedrooms": 3,
       "bathrooms": 3,
+      "rating":5,
       "amenities": [
         "pool",
         "gym",
         "security"
+      ],
+      "neighbourhoods": [
+        "hospital",
+        "shopping_mall",
+        "hypermarket"
       ]
     },
     {
-      "id": 19,
+      "id": 15,
       "title": "Premium 3BHK Apartment",
       "price": 32000,
+      "image":"https://newprojects.99acres.com/projects/shapoorji_pallonji/shapoorji_the_dualis/images/pmr2sob_1749193978_604278245_optOrig.jpg",
+      "gallery":["https://newprojects.99acres.com/projects/shapoorji_pallonji/shapoorji_the_dualis/images/pmr2sob_1749193978_604278245_optOrig.jpg",
+                "https://psgroup.in/blog/wp-content/uploads/2021/01/photo-1578683010236-d716f9a3f461.jpeg",
+                "https://img.squareyards.com/secondaryPortal/IN_638976301725655699-0111250942524252.jpeg?d=110x150",
+                "https://img.staticmb.com/mbphoto/property/cropped_images/2026/Jan/09/Photo_h470_w1080/82921567_1_1767972031981-3171_470_1080.jpg",
+                "https://images.nobroker.in/images/8aa9bd459b8dd0f8019b8e3070e52a60/8aa9bd459b8dd0f8019b8e3070e52a60_79227_865161_medium.jpg"
+                ],
       "location": "Panampilly Nagar",
-      "locationmap":{"lat":9.9662,"lng":76.2972},
+      "locationmap": {
+        "lat": 9.9662,
+        "lng": 76.2972
+      },
       "sqft": 1500,
       "bedrooms": 3,
       "bathrooms": 3,
+      "rating":4.3,
       "amenities": [
         "pool",
         "parking",
         "gym"
+      ],
+      "neighbourhoods": [
+        "church",
+        "school",
+        "hospital"
       ]
     },
+    
     {
-      "id": 20,
-      "title": "3BHK Near IT Hub",
-      "price": 31000,
-      "location": "Infopark",
-      "locationmap":{"lat":10.0175,"lng":76.3492},
-      "sqft": 1480,
-      "bedrooms": 3,
-      "bathrooms": 3,
-      "amenities": [
-        "parking",
-        "security",
-        "wifi"
-      ]
-    },
-    {
-      "id": 21,
+      "id": 16,
       "title": "Elegant 3BHK Residence",
       "price": 33000,
+      "image":"https://www.mvnaeroone.com/assets/images/living-dining-3bhk-flat.webp",
+      "gallery":["https://www.mvnaeroone.com/assets/images/living-dining-3bhk-flat.webp",
+                "https://housing-images.n7net.in/01c16c28/c90162407bd635c292fcf756fd72e7bb/v0/medium/5_bhk_penthouse-for-sale-sarkhej_okaf-Ahmedabad-others.jpg",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrwx6ciPUtUwynA9_U4y4QW_vwAatDISw2Kg&s",
+                "https://images.nobroker.in/images/8a9f9183959453590195946aa7470740/8a9f9183959453590195946aa7470740_6059_medium.jpg",
+                "https://images.nobroker.in/images/8aa9a0619904f08c019904f625d501f5/8aa9a0619904f08c019904f625d501f5_46625_456025_medium.jpg"],
       "location": "Kadavanthra",
-      "locationmap":{"lat":9.9630,"lng":76.2830},
+      "locationmap": {
+        "lat": 9.9630,
+        "lng": 76.2830
+      },
       "sqft": 1520,
       "bedrooms": 3,
       "bathrooms": 3,
+      "rating":4.1,
       "amenities": [
         "pool",
         "gym",
         "security"
+      ],
+      "neighbourhoods": [
+        "school",
+        "hospital",
+        "church"
       ]
     },
+    
     {
-      "id": 22,
-      "title": "Spacious 4BHK Villa",
-      "price": 45000,
-      "location": "Thrippunithura",
-      "locationmap":{"lat":9.9568,"lng":76.3415},
-      "sqft": 2100,
-      "bedrooms": 4,
-      "bathrooms": 4,
-      "amenities": [
-        "garden",
-        "parking",
-        "pet-friendly"
-      ]
-    },
-    {
-      "id": 23,
+      "id": 17,
       "title": "Luxury 4BHK Penthouse",
       "price": 52000,
+      "image":"https://images.nobroker.in/images/8a9fac839671572801967167487705c4/8a9fac839671572801967167487705c4_87121_34013_medium.jpg",
+      "gallery":["https://images.nobroker.in/images/8a9fac839671572801967167487705c4/8a9fac839671572801967167487705c4_87121_34013_medium.jpg",
+                "https://newprojects.99acres.com/projects/z_engineers_construction/z_padmanabha/images/axshdd8_1714548518_489364570.jpg",
+                "https://images.nobroker.in/images/8a9fa284977d214701977d2635fe0091/8a9fa284977d214701977d2635fe0091_58079_485930_medium.jpg",
+                "https://housing-images.n7net.in/01c16c28/1d20c0cdddce41dbf87008f6432f0102/v0/medium/3_bhk_apartment-for-sale-pati-Hyderabad-bedroom.jpg",
+                "https://housing-images.n7net.in/01c16c28/870d4d8749267a9b0700ce8013e3ef4b/v0/medium/3_bhk_apartment-for-rent-satellite-Ahmedabad-bedroom.jpg",
+                "https://media.designcafe.com/wp-content/uploads/2024/02/22183423/luxury-kitchen-designs.jpg"],
       "location": "Marine Drive",
-      "locationmap":{"lat":9.9645,"lng":76.2825},
+      "locationmap": {
+        "lat": 9.9645,
+        "lng": 76.2825
+      },
       "sqft": 2400,
       "bedrooms": 4,
       "bathrooms": 4,
+      "rating":4.2,
       "amenities": [
         "pool",
         "gym",
         "terrace"
+      ],
+      "neighbourhoods": [
+        "school",
+        "shopping_mall",
+        "hospital",
+        "temple"
       ]
     },
+    
+     
     {
-      "id": 24,
-      "title": "4BHK Duplex Home",
-      "price": 48000,
-      "location": "Kakkanad",
-      "locationmap":{"lat":10.0160,"lng":76.3570},
-      "sqft": 2200,
-      "bedrooms": 4,
-      "bathrooms": 4,
-      "amenities": [
-        "parking",
-        "garden"
-      ]
-    },
-    {
-      "id": 25,
+      "id": 18,
       "title": "Large 4BHK Family Villa",
       "price": 50000,
+      "image":"https://images.nobroker.in/images/8a9faf839a48f5d2019a496723282e1d/8a9faf839a48f5d2019a496723282e1d_2777_87980_medium.jpg",
+      "gallery":["https://images.nobroker.in/images/8a9faf839a48f5d2019a496723282e1d/8a9faf839a48f5d2019a496723282e1d_2777_87980_medium.jpg",
+                "https://media.designcafe.com/wp-content/uploads/2024/11/11212229/luxury-modern-kitchen-designs.jpg",
+                "https://bienalclosets.com/wp-content/uploads/2023/08/modern-cozy-bedroom-interior-design-inspiration.jpg",
+                "https://media.architecturaldigest.com/photos/67bcc8747dfc89b75d51a6ab/16:9/w_2048,h_1152,c_limit/Kishani%20Perera_Point%20Dume%20Project_Photographer%20Anthony%20Barcelo.jpg",
+                "https://cdn.shopify.com/s/files/1/1832/4309/files/plush_fabric_headboard.jpg?v=1665432499",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSao8NSK1RdpHd4j9qcSoOZARyOTTO37srJVg&s",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiQqmqI20leIa4P3c6MQ8489HRLDW3iZefcA&s"],
       "location": "Aluva",
-      "locationmap":{"lat":10.1085,"lng":76.3525},
+      "locationmap": {
+        "lat": 10.1085,
+        "lng": 76.3525
+      },
       "sqft": 2300,
       "bedrooms": 4,
       "bathrooms": 4,
+      "rating":4.7,
       "amenities": [
         "pet-friendly",
         "parking",
         "garden"
+      ],
+      "neighbourhoods": [
+        "school",
+        "hospital"
       ]
     },
     {
-      "id": 26,
+      "id": 19,
       "title": "Executive 5BHK Villa",
       "price": 65000,
+      "image":"https://honerhomes.b-cdn.net/Projects-Configuration/HonerHomes-5BHK/Honerhomes5BHK-richmont.webp",
+      "gallery":["https://honerhomes.b-cdn.net/Projects-Configuration/HonerHomes-5BHK/Honerhomes5BHK-richmont.webp",
+                "https://assets.superhivemarket.com/store/product/223849/image/xlarge-2feb75e9418be41b4ce79d39aaf9a569.jpg",
+                "https://www.thespruce.com/thmb/ercyUzkNihNJGN9yIfD_y___t_g=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/cozy-bedroom-ideas-5078657-hero-2763eb67d1f0404e9ab8eb7280553e8e.jpg",
+                "https://blog.canadianloghomes.com/wp-content/uploads/2024/05/cozy-eclectic-bohemian-bedroom.jpg",
+                "https://hgtvhome.sndimg.com/content/dam/images/hgtv/fullset/2019/9/1/0/IO_Wendy-Labrum_Uptown-Glamour_3.jpg.rend.hgtvcom.616.411.85.suffix/1567530490122.webp",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOJ4-xtmLFSF0wvHfHjQ61JjLEL6xYIt-UYQ&s",
+                "https://www.oppeinhome.com/upload/images/ueditor/20250422/modern-large-main-kitchen-and-small-wet-kitchen-design.webp",
+                "https://www.thespruce.com/thmb/n5p01Mvmuqy6cKvhdavkTRmvNWg=/2048x0/filters:no_upscale():max_bytes(150000):strip_icc()/fancy-bathroom-ideas-4325947-hero-4777bf14fe2b447b86a21e8a64194c29.jpg"],
       "location": "Panampilly Nagar",
-      "locationmap":{"lat":9.9665,"lng":76.2975},
+      "locationmap": {
+        "lat": 9.9665,
+        "lng": 76.2975
+      },
       "sqft": 3000,
       "bedrooms": 5,
       "bathrooms": 5,
+      "rating":4.4,
       "amenities": [
         "pool",
         "gym",
         "parking"
+      ],
+      "neighbourhoods": [
+        "temple",
+        "church",
+        "school"
       ]
     },
+    
     {
-      "id": 27,
-      "title": "Luxury 5BHK Mansion",
-      "price": 72000,
-      "location": "Marine Drive",
-      "locationmap":{"lat":9.9650,"lng":76.2830},
-      "sqft": 3400,
-      "bedrooms": 5,
-      "bathrooms": 5,
-      "amenities": [
-        "pool",
-        "terrace",
-        "gym"
-      ]
-    },
-    {
-      "id": 28,
-      "title": "5BHK Premium Villa",
-      "price": 68000,
-      "location": "Kakkanad",
-      "locationmap":{"lat":10.0165,"lng":76.3575},
-      "sqft": 3100,
-      "bedrooms": 5,
-      "bathrooms": 5,
-      "amenities": [
-        "parking",
-        "garden",
-        "security"
-      ]
-    },
-    {
-      "id": 29,
-      "title": "Grand 6BHK Estate",
-      "price": 85000,
-      "location": "Thrippunithura",
-      "locationmap":{"lat":9.9570,"lng":76.3420},
-      "sqft": 4200,
-      "bedrooms": 6,
-      "bathrooms": 6,
-      "amenities": [
-        "pool",
-        "garden",
-        "parking"
-      ]
-    },
-    {
-      "id": 30,
+      "id": 20,
       "title": "Ultra Luxury 6BHK Villa",
       "price": 95000,
+      "image":"https://i.ytimg.com/vi/yqIgTGBC2Y8/maxresdefault.jpg",
+      "gallery":["https://i.ytimg.com/vi/yqIgTGBC2Y8/maxresdefault.jpg",
+                "https://jumanji.livspace-cdn.com/magazine/wp-content/uploads/sites/2/2022/07/26165329/3-2.jpg",
+                "https://www.nobroker.in/blog/wp-content/uploads/2023/04/luxury-bedroom-interior-design.webp",
+                "https://www.nobroker.in/blog/wp-content/uploads/2023/04/right-lighting-for-luxury-bedroom-design-1200x673.webp",
+                "https://homebazaar-blog.s3.ap-south-1.amazonaws.com/knowledge/wp-content/uploads/2023/05/23124313/Latest-Modern-Luxury-Bedroom-Designs1.jpg",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu4pwqrs4ovmfcMr4_zSS_v3Zkk7FF72iNzw&s",
+                "https://s3-blog.homelane.com/design-ideas/wp-content/uploads/2025/08/18054042/luxury-modern-master-bedroom-interior-design-latest-lighting-ideas.png",
+                "https://www.thespruce.com/thmb/45IIeUljysZBsXj5UJDTzrvQPY4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/113-7b22e69520534c67844b15f99c802910.jpeg",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqLuvEIGxIKveKF9HJzAsOOAX2RUf4flg4Yw&s",
+                "https://blenderartists.org/uploads/default/original/4X/8/9/e/89e0dc3081e70d584eeeeb85a4ed418eee51b3c9.jpeg",
+                "https://cdn.home-designing.com/wp-content/uploads/2018/05/d0c0d160644969.5a54b9c7844b6.jpg",
+                "https://d4b28jbnqso5g.cloudfront.net/DSC_07556_57_58_59_60_copy_3b558c7a1c.webp",
+                "https://www.oppeinhome.com/upload/images/ueditor/20220818/10-Best-Luxury-Kitchen-Designs-1.jpg"],
       "location": "Marine Drive",
-      "locationmap":{"lat":9.9655,"lng":76.2835},
+      "locationmap": {
+        "lat": 9.9655,
+        "lng": 76.2835
+      },
       "sqft": 4600,
       "bedrooms": 6,
       "bathrooms": 6,
+      "rating":4.9,
       "amenities": [
         "pool",
         "gym",
         "terrace",
         "parking"
+      ],
+      "neighbourhoods": [
+        "school",
+        "temple",
+        "church",
+        "hospital",
+        "shopping_mall"
       ]
     }
   ]
