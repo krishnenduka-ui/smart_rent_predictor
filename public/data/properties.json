@@ -598,7 +598,8 @@
         "church",
         "hospital",
         "shopping_mall"
-      ]
+      ],
+      "featured": true
     }
   ]
 }

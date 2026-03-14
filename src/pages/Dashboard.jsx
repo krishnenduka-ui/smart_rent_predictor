@@ -32,24 +32,24 @@ const Dashboard = () => {
 
   return (
     <div className="min-h-screen">
-      <div className="flex justify-between bg-blue-600 p-6 text-white">
+      <div className="flex justify-between bg-emerald-900 p-6 text-white">
         <h1 className="font-bold text-xl  ">My Dashboard</h1>
-        <div className="">
+        <div className=" flex flex-row gap-3">
           <Link to={'/favorites'} className="p-2 hover:text-gray-300">Favorites</Link>
           <Link to={'/saved-searches'} className="p-2 hover:text-gray-300">Saved Searches</Link>
           <button
-            className=" border p-2 rounded hover:text-gray-300"
+            className="p-2 border rounded hover:text-gray-300 "
             onClick={handleLogout}>Logout</button>
         </div>
 
       </div>
 
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 p-3">
         {
           properties.map((property) => {
             return (
               <div key={property.id}>
-                <img src={property.image} />
+                <img className="w-full h-60 object-cover rounded" src={property.image} />
                 <h2>{property.title}</h2>
                 <p>{property.price}</p>
                 <p>{property.location}</p>

@@ -15,20 +15,20 @@ const Properties = () => {
 
   return (
     <div className='min-h-screen text-center '>
-       <div className='flex justify-center items-center gap-4'>
+      <div className='flex justify-center items-center gap-4'>
         <img className='w-100 h-100 p-8 ' src={property.image} />
       </div>
-      <h2 className='text-2xl font-semibold'>{property.title}</h2>
+      <h2 className='text-3xl font-semibold mb-6'>{property.title}</h2>
       <div className='text-lg'>
-      <p><label>Price of the property:</label>{property.price}<label>per month</label></p>
-      <p><label>The total area:</label>{property.sqft}<label>sq.ft</label></p>
-      <p><label>Number of bedrooms:</label>{property.bedrooms}</p>
-      <p><label>Number of bathrooms:</label>{property.bathrooms}</p>
-      <p><label>The amenities of the property:</label>
+        <p><label className='font-semibold'>Price of the property:</label>{property.price}<label>per month</label></p>
+        <p><label className='font-semibold'>The total area:</label>{property.sqft}<label>sq.ft</label></p>
+        <p><label className='font-semibold'>Number of bedrooms:</label>{property.bedrooms}</p>
+        <p><label className='font-semibold'>Number of bathrooms:</label>{property.bathrooms}</p>
+        <p><label className='font-semibold'>The amenities of the property:</label>
           {property.amenities.join(", ")}
-      </p>
+        </p>
       </div>
-      
+
     </div>
 
   )

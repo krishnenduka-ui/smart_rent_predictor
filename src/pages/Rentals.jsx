@@ -143,7 +143,7 @@ const Rentals = () => {
 
         {/* Search Apartments */}
         <div className="max-w-5xl mx-auto bg-white p-6 rounded-lg shadow-md mt-6">
-          <form className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <form className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
 
             <input
               type="text"
@@ -176,26 +176,21 @@ const Rentals = () => {
               <option value="3">3+ Bedrooms</option>
             </select>
 
-            <button className="bg-blue-600 text-white rounded hover:bg-blue-700 transition" onClick={handleSearch} >
-              Search
-            </button>
+            
           </form>
         </div>
       </div>
 
 
 
-      <div className=" flex flex-row gap-3 p-4">
+      {/* ----------Filter-------------------- */}
 
-
-        {/*------------------- Filters----------------- */}
-
-        <div className="sm:w-200  p-6 rounded shadow">
+      <div className="flex flex-row gap-3 p-4">
+        <div className=" flex-1 p-6 rounded shadow">
           <h2 className="font-semibold text-lg mb-4">Filters</h2>
-
           <div className="mb-4">
-            <label className="block mb-2 font-medium">Property Type</label>
-            <select className="w-full p-2 border rounded"
+             <label className="block mb-2 font-medium">Property Type</label>
+             <select className="p-2 border rounded w-full"
               value={selectType}
               onInput={(e) => setSelectType(e.target.value)}>
               <option value=" ">Select type</option>
@@ -205,10 +200,9 @@ const Rentals = () => {
             </select>
           </div>
 
-
           <div className="mb-4">
             <label className="block mb-2 font-medium">Bathrooms</label>
-            <select className="w-full p-2 border rounded"
+            <select className=" p-2 border rounded w-full"
               value={selectBathrooms}
               onInput={(e) => setSelectBathrooms(e.target.value)}>
               <option value=" ">Bathrooms</option>
@@ -217,7 +211,6 @@ const Rentals = () => {
               <option value="3">3+</option>
             </select>
           </div>
-
 
           <div >
             <label className="block mb-2 font-medium">Amenities</label>
@@ -239,29 +232,31 @@ const Rentals = () => {
               </label>
 
             </div>
-          </div>
+          </div>  
         </div>
 
-
-
-        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+       
+          <div className=" flex-3 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
           {
             searchProperties.map((property) => {
               return (
-                <div key={property.id}>
-                  <img src={property.image} />
+                <div key={property.id} className="border rounded shadow p-3 ">
+                  <img className="w-full h-48 object-cover rounded" src={property.image} />
                   <h2>{property.title}</h2>
-                  <p>{property.price}</p>
-                  <p>{property.location}</p>
-                  <p>{property.bedrooms}</p>
-                  <button className="bg-blue-400 rounded p-3" onClick={() => handleViewMap(property.id)}>View on Map</button>
+                  <p>Price of the property:{property.price}/month</p>
+                  <p>Location:{property.location}</p>
+                  <p>Number of bedrooms:{property.bedrooms}</p>
+                  <button className="bg-green-600 rounded p-3 hover:bg-gray-200" onClick={() => handleViewMap(property.id)}>View on Map</button>
                 </div>)
             })}
 
 
         </div>
-
+      
       </div>
+
+
+      
     </div>
   );
 };

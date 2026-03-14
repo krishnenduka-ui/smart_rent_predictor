@@ -36,7 +36,7 @@ const Compare = () => {
       </div>
       <div>
         <select
-          className="border p-2 rounded"
+          className="border p-2 w-100 mb-8 rounded"
           value={sort}
           onChange={(e) => setSort(e.target.value)}
         >
@@ -70,8 +70,8 @@ const Compare = () => {
                 {property.title}
               </h2>
 
-              <p className="text-blue-600 font-bold mb-4">
-                {property.price}
+              <p className="text-emerald-600 font-bold mb-4">
+                {property.price}/month
               </p>
 
 
@@ -94,7 +94,7 @@ const Compare = () => {
 
                 <p>
                   <span className="font-semibold">Area:</span>{" "}
-                  {property.area}
+                  {property.sqft}sq.ft
                 </p>
 
               </div>
@@ -102,7 +102,8 @@ const Compare = () => {
 
               <Link
                 to={`/properties/${property.id}`}
-                className="block mt-6 text-center bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition"
+                className="block mt-6 text-center bg-emerald-600 text-white py-2 rounded hover:bg-emerald-300 transition"
+                           
               >
                 View Details
               </Link>

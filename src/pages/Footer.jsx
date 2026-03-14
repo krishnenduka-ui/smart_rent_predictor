@@ -6,7 +6,7 @@ const Footer = () => {
   const social = useSelector((state) => state.social.social)
 
   return (
-    <div className='bg-blue-500 flex flex-row justify-between gap-5 w-full p-8 '>
+    <div className=' bg-emerald-900 flex flex-row justify-between gap-5 w-full p-8 '>
 
       <div>+91 8589812355</div>
 
