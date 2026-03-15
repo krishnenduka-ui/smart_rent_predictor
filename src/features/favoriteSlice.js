@@ -43,9 +43,7 @@ const favoritesSlice = createSlice({
         (item) => item.id !== action.payload.id
       );
 
-      localStorage.setItem(
-        `favorites_${user.email}`,
-        JSON.stringify(state.favorites)
+      localStorage.setItem(`favorites_${user.email}`,JSON.stringify(state.favorites)
       );
     },
 

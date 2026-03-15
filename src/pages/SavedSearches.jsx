@@ -1,96 +1,98 @@
-import React from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { removeSavedSearch } from '../features/savedSearchSlice';
+import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
+import { toast } from "react-hot-toast";
+import { FiLogOut } from "react-icons/fi";
+import { FaUser } from "react-icons/fa";
+import { logout } from "../features/authSlice";
 
 const SavedSearches = () => {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const user = useSelector((state) => state.auth.loggedinUser);
 
-  const savedSearches = [
-    {
-      id: 1,
-      name: "Apartments in Thrissur",
-      location: "Thrissur",
-      price: "₹10,000 - ₹20,000",
-      bedrooms: "2 BHK",
-    },
-    {
-      id: 2,
-      name: "Budget Studios",
-      location: "Punkunnam,Thrissur",
-      price: "₹5,000 - ₹10,000",
-      bedrooms: "Studio",
-    },
-    {
-      id: 3,
-      name: "Family Homes",
-      location: "Ayyanthole,Thrissur",
-      price: "₹15,000 - ₹30,000",
-      bedrooms: "3 BHK",
-    },
-  ];
+   const handleLogout = () => {
+    dispatch(logout());
+    navigate("/login");
+  };
+
+
+  // Only get saved searches for this user
+  const savedSearches = useSelector((state) =>
+    state.savedSearches.searches.filter((s) => s.userId === user.id)
+  );
+
+  const handleViewDetails = (id) => {
+    navigate(`/properties/${id}`);
+  };
+
+  const handleRemove = (id) => {
+    dispatch(removeSavedSearch(id));
+    toast.success("Removed from saved searches");
+  };
 
   return (
-    <div className="min-h-screen bg-gray-100 py-10 px-6">
-
-      {/* Page Header */}
-      <div className="max-w-6xl mx-auto mb-10">
-        <h1 className="text-3xl font-bold text-gray-800 mb-2">
-          Saved Searches
-        </h1>
-        <p className="text-gray-600">
-          Quickly access your previously saved property searches.
-        </p>
-      </div>
-
-      {/* Saved Searches Grid */}
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-
-        {savedSearches.map((search) => (
-          <div
-            key={search.id}
-            className="bg-white rounded-lg shadow hover:shadow-lg transition p-6"
-          >
-            <h2 className="text-xl font-semibold text-gray-800 mb-4">
-              {search.name}
-            </h2>
-
-            <div className=" text-gray-600">
-              <p><span className="font-medium">Location:</span> {search.location}</p>
-              <p><span className="font-medium">Price Range:</span> {search.price}</p>
-              <p><span className="font-medium">Bedrooms:</span> {search.bedrooms}</p>
-            </div>
-
-            {/* Buttons */}
-            <div className="flex gap-3 mt-6">
-              <Link
-                to="/rentals"
-                className="flex-1 bg-blue-600 text-white text-center py-2 rounded hover:bg-blue-700 transition"
-              >
-                View Results
-              </Link>
-
-              <button
-                className="flex-1 border border-red-500 text-red-500 py-2 rounded hover:bg-red-50 transition"
-              >
-                Delete
-              </button>
-            </div>
-          </div>
-        ))}
-
-      </div>
-
-      {/* Empty State (optional) */}
-      {savedSearches.length === 0 && (
-        <div className="text-center mt-20 text-gray-500">
-          <p>No saved searches yet.</p>
-          <Link
-            to="/rentals"
-            className="text-blue-600 font-semibold hover:underline"
-          >
-            Browse Rentals
+    <div className="min-h-screen bg-gray-100">
+      <div className="flex justify-between bg-emerald-900 p-6 text-white">
+        <h1 className="font-bold text-xl">My Dashboard</h1>
+        <div className="flex flex-row gap-3">
+          <Link to={'/dashboard'} className="flex items-center gap-2 p-2">
+            <FaUser /> {user.username}
           </Link>
+          <Link to={"/favorites"} className="p-2 hover:text-gray-300">Favorites</Link>
+          <Link to={"/saved-searches"} className="p-2 hover:text-gray-300">Saved Searches</Link>
+          <button
+            className="flex items-center gap-2 p-2 border rounded hover:text-gray-300"
+            onClick={handleLogout}
+          >
+            <FiLogOut className="text-lg" /> Logout
+          </button>
+        </div>
+      </div>
+      <h2 className="text-3xl font-bold mb-6 mt-6 text-center">My Saved Properties</h2>
+
+      {savedSearches.length === 0 ? (
+        <p>No saved properties yet.</p>
+      ) : (
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
+          {savedSearches.map((s) => {
+            const property = s.property; // saved property object
+            return (
+              <div key={s.id} className="bg-white rounded shadow overflow-hidden">
+                <img
+                  src={property.image}
+                  alt={property.title}
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-4">
+                  <h2 className="text-xl font-semibold mb-2">{property.title}</h2>
+                  <p className="text-emerald-600 font-bold mb-2">{property.price}/month</p>
+                  <p className="text-gray-700 mb-2">{property.location}</p>
+                  <p className="text-gray-700 mb-2">
+                    {property.bedrooms} Bed, {property.bathrooms} Bath, {property.sqft} sq.ft
+                  </p>
+
+                  <div className="flex gap-2 mt-4">
+                    <button
+                      className="bg-green-600 text-white px-3 py-1 rounded hover:bg-green-500"
+                      onClick={() => handleViewDetails(property.id)}
+                    >
+                      View Details
+                    </button>
+                    <button
+                      className="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-400"
+                      onClick={() => handleRemove(s.id)}
+                    >
+                      Remove
+                    </button>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
         </div>
       )}
-
     </div>
   );
 };

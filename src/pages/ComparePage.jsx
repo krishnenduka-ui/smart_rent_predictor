@@ -29,7 +29,7 @@ const ComparePage = () => {
               <div className="space-y-2 text-gray-600">
                 <p>🛏 {property.bedrooms} Bedrooms</p>
                 <p>🛀 {property.bathrooms} Bathrooms</p>
-                <p>📏 {property.size} sqft</p>
+                <p>📏 {property.sqft} sqft</p>
                 
                 <div className="mt-4">
                   <h4 className="font-semibold text-gray-800">Amenities:</h4>

@@ -48,7 +48,7 @@ const PropertyCard = ({ property }) => {
         </button>
 
         <button
-          className="bg-blue-600 text-white rounded p-2 mt-2 hover:bg-blue-500"
+          className="bg-green-600 text-white rounded p-2 mt-2 hover:bg-green-500"
           onClick={handleAddToCompare}
         >
           Compare
