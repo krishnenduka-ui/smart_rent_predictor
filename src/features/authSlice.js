@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-
+import toast from "react-hot-toast";
 const storedUsers = JSON.parse(localStorage.getItem('users'))
 const currentUser = JSON.parse(localStorage.getItem("currentUser"));
 
@@ -15,16 +15,14 @@ const authSlice = createSlice({
     signup: (state, action) => {
 
       const {email} = action.payload
-      const existingUser = state.users.find((user)=>{
-                                                    user.email === email
-                                            })
+      const existingUser = state.users.find((user)=> user.email === email)
 
         if(existingUser){
-          return alert("Email already exist")
+          return toast.error("Email already exist")
         }
         state.users.push({id:Date.now(),...action.payload})
         localStorage.setItem('users',JSON.stringify(state.users))
-        alert("User Registered Successfully")
+        toast.success("User Registered Successfully")
      
     },
 
@@ -36,16 +34,16 @@ const authSlice = createSlice({
                                             })
 
       if (!foundUser) {
-                      return alert("No user with this email")
+                      return toast.error("No user with this email")
                       }
       
       if(foundUser.password != password){
-        return alert("Invalid credentials")
+        return toast.error("Invalid credentials")
 
       }
       state.loggedinUser = foundUser
       localStorage.setItem("currentUser", JSON.stringify(foundUser));
-      alert("LoggedIn Successfull");
+      toast.success("Logged In Successfull");
       
     },
 

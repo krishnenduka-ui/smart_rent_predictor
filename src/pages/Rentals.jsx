@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchProperties, searchProperty } from "../features/propertySlice";
 import { useNavigate } from "react-router-dom";
-
+import PropertyCard from "../components/PropertyCard";
 const Rentals = () => {
   const dispatch = useDispatch()
   const navigate = useNavigate()
@@ -102,19 +102,6 @@ const Rentals = () => {
           property.amenities.includes(amenity)
         )
     )
-
-
-
-  const handleSearch = ((e) => {
-
-    console.log(e.target.value)
-  })
-
-
-  const handleViewMap = (id) => {
-
-    navigate(`/map/${id}`)
-  }
 
   const handleAmenities = (e) => {
     const { value, checked } = e.target;
@@ -238,17 +225,9 @@ const Rentals = () => {
        
           <div className=" flex-3 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
           {
-            searchProperties.map((property) => {
-              return (
-                <div key={property.id} className="border rounded shadow p-3 ">
-                  <img className="w-full h-48 object-cover rounded" src={property.image} />
-                  <h2>{property.title}</h2>
-                  <p>Price of the property:{property.price}/month</p>
-                  <p>Location:{property.location}</p>
-                  <p>Number of bedrooms:{property.bedrooms}</p>
-                  <button className="bg-green-600 rounded p-3 hover:bg-gray-200" onClick={() => handleViewMap(property.id)}>View on Map</button>
-                </div>)
-            })}
+            searchProperties.map((property) => (
+              <PropertyCard key={property.id} property={property} />
+            ))}
 
 
         </div>

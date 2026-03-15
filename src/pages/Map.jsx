@@ -20,26 +20,31 @@ export default function Map() {
   const { id } = useParams();
   const { properties, loading } = useSelector(state => state.properties);
 
-  if (loading) return <p>Loading property...</p>;
+  if (loading) return <p className="text-center mt-4">Loading property...</p>;
 
   // Find property by id
   const property = properties.find(p => p.id === parseInt(id));
 
-  if (!property) return <p>Property not found!</p>;
-  if (!property.locationmap) return <p>Property location not available!</p>;
+  if (!property) return <p className="text-center mt-4">Property not found!</p>;
+  if (!property.locationmap) return <p className="text-center mt-4">Property location not available!</p>;
 
-  const { lat, lng } = property.locationmap; // ✅ use locationmap
+  const { lat, lng } = property.locationmap;
 
   return (
-    <div style={{ height: '100vh', width: '100%' }}>
-      <MapContainer center={[lat, lng]} zoom={13} style={{ height: '100%', width: '100%' }}>
+    <div className="w-full h-screen"> {/* Full width & height of viewport */}
+      <MapContainer 
+        center={[lat, lng]} 
+        zoom={13} 
+        className="w-full h-full" // Tailwind handles full width & height
+      >
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution="&copy; OpenStreetMap contributors"
         />
         <Marker position={[lat, lng]}>
           <Popup>
-            {property.title} <br /> {property.location}
+            <span className="font-semibold">{property.title}</span><br />
+            <span>{property.location}</span>
           </Popup>
         </Marker>
       </MapContainer>

@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-import { removeFavorite } from "../features/propertySlice";
+import { removeFavorite } from "../features/favoriteSlice";
 
 const Favorites = () => {
 
       const dispatch = useDispatch()
-      const favorites = useSelector((state) => state.properties.favorites)
+      const favorites = useSelector((state) => state.favorites.favorites)
 
 if (favorites.length === 0) {
     return (

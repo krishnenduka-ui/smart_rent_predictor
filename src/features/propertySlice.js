@@ -15,7 +15,7 @@ const initialState = {
     loading: false,
     error: null,
     search: [],
-    favorites: []
+   
 
 }
 
@@ -27,22 +27,6 @@ const propertySlice = createSlice({
             state.search = action.payload
 
         },
-        addFavorite: (state, action) => {
-            const exists = state.favorites.find(
-                (property) => property.id === action.payload.id
-            )
-
-            if (!exists) {
-                state.favorites.push(action.payload);
-            }
-        },
-        removeFavorite: (state, action) => {
-            state.favorites = state.favorites.filter((property) => 
-                property.id !== action.payload.id
-            );
-        }
-
-
     },
     extraReducers: (builder) => {
         builder.addCase(fetchProperties.pending, (state) => {
@@ -64,7 +48,7 @@ const propertySlice = createSlice({
 })
 
 
-export const {searchProperty, addFavorite ,removeFavorite} = propertySlice.actions
+export const {searchProperty} = propertySlice.actions
 export default propertySlice.reducer
 
 

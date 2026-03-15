@@ -3,7 +3,7 @@ import { Routes,Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import Rentals from './pages/Rentals'
-import Compare from './pages/Compare'
+import ComparePage from './pages/ComparePage'
 import Favorites from './pages/Favorites'
 import SavedSearches from './pages/SavedSearches'
 import Neighborhoods from './pages/Neighborhoods'
@@ -15,6 +15,7 @@ import Dashboard from './pages/Dashboard'
 import ProtectedRoute from './components/ProtectedRoute'
 import Signup from './pages/Signup'
 
+
 const App = () => {
   return (
     <div>
@@ -23,7 +24,7 @@ const App = () => {
       <Routes>
         <Route path='/' element = {<Home/>}/>
         <Route path='/rentals' element = {<Rentals/>}/>
-        <Route path='/compare' element = {<Compare/>}/>
+        <Route path='/compare' element = {<ComparePage/>}/>
         <Route path='/favorites' element = {<Favorites/>}/>
         <Route path='/saved-searches' element = {<SavedSearches/>}/>
         <Route path='/neighborhoods' element = {<Neighborhoods/>}/>
