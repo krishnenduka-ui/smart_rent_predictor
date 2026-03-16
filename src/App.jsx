@@ -14,6 +14,7 @@ import Map from './pages/Map'
 import Dashboard from './pages/Dashboard'
 import ProtectedRoute from './components/ProtectedRoute'
 import Signup from './pages/Signup'
+import RentEstimator from './pages/RentEstimator'
 
 
 const App = () => {
@@ -28,6 +29,7 @@ const App = () => {
         <Route path='/favorites' element = {<Favorites/>}/>
         <Route path='/saved-searches' element = {<SavedSearches/>}/>
         <Route path='/neighborhoods' element = {<Neighborhoods/>}/>
+        <Route path='/rent-estimator' element = {<RentEstimator/>}/>
         <Route path='/signup' element = {<Signup/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path="/properties/:id" element={<Properties />} />

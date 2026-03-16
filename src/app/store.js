@@ -6,6 +6,7 @@ import mapReducer from '../features/mapSlice'
 import favoriteReducer from '../features/favoriteSlice'
 import compareReducer from '../features/compareSlice'
 import savedSearchReducer from '../features/savedSearchSlice'
+import rentEstimatorReducer from '../features/rentEstimatorSlice'
 export const store = configureStore({
     reducer:{
         social:socialReducer,
@@ -14,6 +15,7 @@ export const store = configureStore({
         map:mapReducer,
         favorites:favoriteReducer,
         compare:compareReducer,
-        savedSearches:savedSearchReducer
+        savedSearches:savedSearchReducer,
+        rentEstimator: rentEstimatorReducer
     }
 })
