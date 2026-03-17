@@ -8,10 +8,14 @@ const compareSlice = createSlice({
   },
   reducers: {
     addToCompare: (state, action) => {
-      if (state.selectedProperties.length < 3) {
-        state.selectedProperties.push(action.payload);
-      }
-    },
+  const exists = state.selectedProperties.find(
+    (p) => p.id === action.payload.id
+  );
+
+  if (!exists && state.selectedProperties.length < 3) {
+    state.selectedProperties.push(action.payload);
+  }
+},
     removeFromCompare: (state, action) => {
       state.selectedProperties = state.selectedProperties.filter(
         (p) => p.id !== action.payload

@@ -1,7 +1,6 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-
 export const fetchProperties = createAsyncThunk('properties/fetchProperties',
     async () => {
         const response = await axios.get('/data/properties.json')
@@ -18,7 +17,6 @@ const initialState = {
    
 
 }
-
 const propertySlice = createSlice({
     name: "properties",
     initialState,

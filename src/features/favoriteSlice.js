@@ -1,55 +1,35 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const getUserFavorites = () => {
-  const user = JSON.parse(localStorage.getItem("currentUser"));
-
-  if (!user) return [];
-
-  const favorites = JSON.parse(
-    localStorage.getItem(`favorites_${user.email}`)
-  );
-
-  return favorites || [];
+// Load favorites for user from localStorage
+const getFavorites = (userId) => {
+  const allFavorites = JSON.parse(localStorage.getItem("userfavorites")) || [];
+  return allFavorites.filter(f => f.userId === userId).map(f => f.property);
 };
 
 const favoritesSlice = createSlice({
   name: "favorites",
-  initialState: {
-    favorites: getUserFavorites()
-  },
-
+  initialState: { favorites: [] },
   reducers: {
+    initializeFavorites: (state, action) => { state.favorites = getFavorites(action.payload); },
     addFavorite: (state, action) => {
-      const user = JSON.parse(localStorage.getItem("currentUser"));
-
-      const exists = state.favorites.find(
-        (item) => item.id === action.payload.id
-      );
-
+      const { userId, property } = action.payload;
+      const allFavorites = JSON.parse(localStorage.getItem("userfavorites")) || [];
+      const exists = allFavorites.find(item => item.userId === userId && item.property.id === property.id);
       if (!exists) {
-        state.favorites.push(action.payload);
-
-        localStorage.setItem(
-          `favorites_${user.email}`,
-          JSON.stringify(state.favorites)
-        );
+        allFavorites.push({ userId, property });
+        localStorage.setItem("userfavorites", JSON.stringify(allFavorites));
+        state.favorites.push(property);
       }
     },
-
     removeFavorite: (state, action) => {
-      const user = JSON.parse(localStorage.getItem("currentUser"));
-
-      state.favorites = state.favorites.filter(
-        (item) => item.id !== action.payload.id
-      );
-
-      localStorage.setItem(`favorites_${user.email}`,JSON.stringify(state.favorites)
-      );
-    },
-
-    
+      const { userId, propertyId } = action.payload;
+      let allFavorites = JSON.parse(localStorage.getItem("userfavorites")) || [];
+      allFavorites = allFavorites.filter(item => !(item.userId === userId && item.property.id === propertyId));
+      localStorage.setItem("userfavorites", JSON.stringify(allFavorites));
+      state.favorites = state.favorites.filter(item => item.id !== propertyId);
+    }
   }
 });
 
-export const { addFavorite, removeFavorite} = favoritesSlice.actions;
+export const { initializeFavorites, addFavorite, removeFavorite } = favoritesSlice.actions;
 export default favoritesSlice.reducer;

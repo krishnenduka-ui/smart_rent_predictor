@@ -1,10 +1,9 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { fetchProperties } from "../features/propertySlice";
 import { useSelector, useDispatch } from "react-redux";
 import { useEffect, useState } from "react";
 const Neighborhoods = () => {
-
+  const navigate = useNavigate()
   const dispatch = useDispatch()
   const properties = useSelector((state) => state.properties.properties)
   const [sort, setSort] = useState("")
@@ -75,9 +74,6 @@ const Neighborhoods = () => {
               <p className="text-yellow-500 font-medium mb-2">
                 ⭐ {neighbor.rating} / 5
               </p>
-              <p className="text-gray-600 text-sm mb-4">
-                {neighbor.description}
-              </p>
 
               <div className="flex flex-wrap gap-2 mb-4">
                 {neighbor.amenities.map((item, index) => (
@@ -96,14 +92,14 @@ const Neighborhoods = () => {
                 ))}
               </div>
 
-              {/* Button */}
-              <Link
+
+              <button
                 key={neighbor.id}
-                to={`/properties/${neighbor.id}`}
-                className="block text-center bg-emerald-600 text-white py-2 rounded hover:bg-emerald-300 transition"
+                onClick={() => navigate(`/properties/${neighbor.id}`)}
+                className="bg-emerald-700 text-white w-full py-2 rounded hover:bg-emerald-300 transition"
               >
                 View Details
-              </Link>
+              </button>
 
             </div>
           </div>

@@ -5,7 +5,6 @@ import Home from './pages/Home'
 import Rentals from './pages/Rentals'
 import ComparePage from './pages/ComparePage'
 import Favorites from './pages/Favorites'
-import SavedSearches from './pages/SavedSearches'
 import Neighborhoods from './pages/Neighborhoods'
 import Login from './pages/Login'
 import Footer from './pages/Footer'
@@ -14,6 +13,7 @@ import Map from './pages/Map'
 import Dashboard from './pages/Dashboard'
 import ProtectedRoute from './components/ProtectedRoute'
 import Signup from './pages/Signup'
+import SavedSearches from './pages/SavedSearches'
 import RentEstimator from './pages/RentEstimator'
 
 
@@ -27,7 +27,7 @@ const App = () => {
         <Route path='/rentals' element = {<Rentals/>}/>
         <Route path='/compare' element = {<ComparePage/>}/>
         <Route path='/favorites' element = {<Favorites/>}/>
-        <Route path='/saved-searches' element = {<SavedSearches/>}/>
+        <Route path='/saved-searches' element ={<SavedSearches/>}/>
         <Route path='/neighborhoods' element = {<Neighborhoods/>}/>
         <Route path='/rent-estimator' element = {<RentEstimator/>}/>
         <Route path='/signup' element = {<Signup/>}/>
