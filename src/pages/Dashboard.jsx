@@ -81,10 +81,10 @@ const Dashboard = () => {
       {/* Header */}
       <div className="flex justify-between bg-emerald-900 p-6 text-white">
         <h1 className="font-bold text-xl">My Dashboard</h1>
-        <div className="flex gap-3">
-          <p className="flex items-center gap-2"><FaUser /> {user.username}</p>
-          <Link to="/favorites" className="hover:text-gray-300">Favorites</Link>
-          <Link to="/saved-searches" className="hover:text-gray-300">Saved Searches</Link>
+        <div className="flex flex-row gap-2">
+          <p className="flex items-center gap-2 p-2"><FaUser /> {user.username}</p>
+          <Link to="/favorites" className="p-2 hover:text-gray-300">Favorites</Link>
+          <Link to="/saved-searches" className="p-2 hover:text-gray-300">Saved Searches</Link>
           <button
             className="flex items-center gap-2 border rounded hover:text-gray-300 p-2"
             onClick={handleLogout}
